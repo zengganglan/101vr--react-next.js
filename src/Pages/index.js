@@ -1,0 +1,253 @@
+import React, { useState, useEffect,useRef } from 'react'
+import {Link} from 'react-router-dom'
+// 引入index的css
+import '../static/css/Index.less'
+import Swiper from 'swiper/js/swiper.js'
+import 'swiper/css/swiper.min.css'
+import { Layout, Menu, Carousel, Row,Col,Icon } from 'antd'
+import Footers from '../components/Footer'
+import Headers from '../components/Header'
+import { LeftOutlined,RightOutlined } from '@ant-design/icons';
+
+const { Header, Content, Footer } = Layout
+const { SubMenu } = Menu;
+// const {LeftOutlined,RightOutlined} =Icon
+function Index(props) {
+  // useref有两个作用，一是获取dom而是保存变量 const textRef = useRef() textRef.current = text;
+  const inputEl = useRef(null)
+  console.log(props)
+  const picturePath = [{
+    title: 'static/picture/首页/首页卡片/新时代/111.png',
+    cards: ['static/picture/首页/首页卡片/新时代/1.png',
+      'static/picture/首页/首页卡片/新时代/2.png',
+      'static/picture/首页/首页卡片/新时代/3.png',
+      'static/picture/首页/首页卡片/新时代/4.png',
+      'static/picture/首页/首页卡片/新时代/5.png']
+  },
+  {
+    title: 'static/picture/首页/首页卡片/70周年/222.png',
+    cards: ['static/picture/首页/首页卡片/70周年/1.png',
+      'static/picture/首页/首页卡片/70周年/2.png',
+      'static/picture/首页/首页卡片/70周年/3.png',
+      'static/picture/首页/首页卡片/70周年/4.png',
+      'static/picture/首页/首页卡片/70周年/5.png']
+  },
+
+  {
+    title: 'static/picture/首页/首页卡片/党史/333.png',
+    cards: ['static/picture/首页/首页卡片/党史/1.png',
+      'static/picture/首页/首页卡片/党史/2.png',
+      'static/picture/首页/首页卡片/党史/3.png',
+      'static/picture/首页/首页卡片/党史/4.png',
+      'static/picture/首页/首页卡片/党史/5.png']
+  },
+  {
+    title: 'static/picture/首页/首页卡片/特色主题/444.png',
+    cards: ['static/picture/首页/首页卡片/特色主题/1.png',
+      'static/picture/首页/首页卡片/特色主题/2.png',
+      'static/picture/首页/首页卡片/特色主题/3.png',
+      'static/picture/首页/首页卡片/特色主题/4.png',
+      'static/picture/首页/首页卡片/特色主题/5.png']
+  }
+  ]
+  let handlePrev = () => {
+    console.log(inputEl)
+    inputEl.current.prev();
+  }
+
+  let handleNext = () => {
+    inputEl.current.next();
+  }
+
+  useEffect(() => {
+    var mySwiper = new Swiper('.swiper-container', {
+
+      watchSlidesProgress: true,
+      slidesPerView: 'auto',//slider容器能够同时显示的slides数量(carousel模式)
+      centeredSlides: true,//默认active slide居左，设置为true后居中
+      loop: true,
+      autoplay: true,
+      loopedSlides: 5,//可视slide
+      autoplay: true,
+      navigation: {
+      	nextEl: '.swiper-button-next',
+      	prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        //clickable :true,
+      },
+      //当Swiper的progress被改变时执行。接受Swiper的progress作为参数（返回值范围一般在0-1）
+      on: {
+        progress: function (progress) {
+          var modify;
+          var translate;
+          var scale;
+          var zIndex;
+          for (var i = 0; i < this.slides.length; i++) {
+            //返回当前选中的元素中的指定序号的元素
+            var slide = this.slides.eq(i);
+            var slideProgress = this.slides[i].progress;
+            modify = 1;
+            if (Math.abs(slideProgress) > 1) {
+              modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+            }
+            translate = slideProgress * modify * 260 + 'px';
+            scale = 1 - Math.abs(slideProgress) / 5;
+            zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+            slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+            slide.css('zIndex', zIndex);
+            slide.css('opacity', 1);
+            if (Math.abs(slideProgress) > 3) {
+              slide.css('opacity', 0);
+            }
+          }
+        },
+        setTransition: function (transition) {
+          //每当设置Swiper开始过渡动画时执行。transtion获取到的是Swiper的speed值
+          for (var i = 0; i < this.slides.length; i++) {
+            var slide = this.slides.eq(i)
+            slide.transition(transition);
+          }
+
+        }
+      }
+
+    });
+
+
+  })
+
+  return (
+    <Layout>
+      <Headers style={{ background: '#fff', padding: 0 }} />
+
+      <Content >
+
+        <div style={{ background: '#fff' }}>
+          <Carousel autoplay ref={inputEl}>
+            <div>
+              <h3>
+                <img src={require("../static/picture/首页/轮播图/img_1.png")} alt="" />
+
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <img src={require("../static/picture/首页/轮播图/img_2.png")} alt="" />
+
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <img src={require("../static/picture/首页/轮播图/img_3.png")} alt="" />
+
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <img src={require("../static/picture/首页/轮播图/img_4.png")} alt="" />
+
+              </h3>
+            </div>
+            <div>
+              <h3>
+                <img src={require("../static/picture/首页/轮播图/img_5.png")} alt="" />
+
+              </h3>
+            </div>
+          
+          </Carousel>
+        <LeftOutlined onClick={handlePrev}/> 
+        <RightOutlined onClick={handleNext}/> 
+            
+          {/* 视频 */}
+          <div className='video'>
+            <div className='title'>  <img src={require("../static/picture/首页/分割线.png")} alt="" />
+            </div>
+            <div className='body'>
+              <iframe src="http://player.bilibili.com/player.html?aid=57449597&cid=100299444&page=1&high_quality=1" scrolling="no" border="0" frameBorder="no" framespacing="0" allowFullScreen={true} className=" ifra" id="ifra" background='none' />
+            </div>
+          </div>
+          {/* 产品系列 */}
+          <div className='prolist'>
+
+            {
+              picturePath.map((item, index) => {
+                return (
+
+                  <div className='product' key={index}>
+                    <div className='pro_name'>
+                      {/* require不能是变量路径，加上../去拼接就好了 */}
+                      <img src={require('../' + item.title)} alt="" />
+                    </div>
+                    <div className="swiper-container">
+
+                      <div className="swiper-wrapper">
+                        {
+                          item['cards'].map((item1,index1) => {
+                            return (
+                              <div className="swiper-slide"  key={item1}>
+                                <img src={require('../' + item1)} alt="" />
+                              </div>
+                            )
+                          })
+                        }
+
+
+                      </div>
+                      
+
+                      <div className='swiper-pagination'>
+     
+                      </div>
+                    </div>
+                  </div>
+                )
+              })
+            }
+          </div>
+          {/*  成功案例*/}
+          <div className='cases'>
+            <div className='top'>          <img src={require("../static/picture/首页/555.png")} alt="" />
+            </div>
+            <div className='right'>  
+            <Row type='flex' justify="center" align='middle'>
+            <Col className="" span={1} xs={4} sm={4} md={4} lg={4} xl={4}> 
+            <div className='right1'><img src={require("../static/picture/首页/666.png")} alt="" /></div>
+
+            </Col>
+            <Col className="" span={1} xs={20} sm={20} md={8} lg={10} xl={10}> 
+            <Row type='flex' justify="center" align='middle'>
+            <Col className="" span={1} xs={24} sm={24} md={24} lg={12} xl={12}> 
+            <div className='right2'><img src={require("../static/picture/首页/777.png")} alt="" /></div>
+
+            </Col>
+            <Col className="" span={1} xs={24} sm={24} md={24} lg={12} xl={12}> 
+            <div className='right3'><img src={require("../static/picture/首页/888.png")} alt="" /></div>
+       
+            </Col>
+            <Col className="" span={1} xs={24} sm={24} md={24} lg={12} xl={12}> 
+            <div className='right4'><img src={require("../static/picture/首页/999.png")} alt="" /></div>
+       
+            </Col>
+            <Col className="" span={1} xs={24} sm={24} md={24} lg={12} xl={12}> 
+            <div className='right5'>
+            <Link to='/successcase'> <img src={require("../static/picture/首页/查看更多.png")} alt="" /></Link></div>
+             
+         
+            </Col>
+            </Row>
+            </Col>
+            </Row>
+            
+            </div>
+          </div>
+
+        </div>
+      </Content>
+      <Footers style={{ textAlign: 'center' }} history={props}></Footers>
+    </Layout>
+  )
+}
+export default Index

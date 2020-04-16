@@ -1,0 +1,218 @@
+.header {
+    height: 105px;
+    background-color: #950000;
+    /* background-color: #fff;
+
+    padding: .4rem;
+    overflow: hidden;
+    height: 2.8rem;
+    border-bottom:1px solid #ccc; */
+}
+@media screen and (max-width: 800px)  {
+   .header{
+   height: 60px !important;
+   }
+   .memu-div .ant-menu {
+    line-height: 60px !important;
+  
+}
+.ant-col-xs-20 {
+    height: 60px !important;
+}
+.ant-col-xs-20 .ant-btn {
+    float: right;
+    margin-top: 4px !important;
+    margin-right: 20px;
+    height: 50px;
+}
+.header-logo {
+    line-height: 50px !important;
+    height: 50px !important;
+    width: 60px !important;
+}
+.header-logo img{
+    display: inline-block;
+     height: 50px !important;
+     width: 50px !important;
+     
+   }
+   .ant-menu-item-selected,
+.ant-menu-item-active {
+    /* color: #FFFF00 !important; */
+    border:none !important;
+}
+}
+.header-logo {
+    color: #1e90ff;
+    text-align: center;
+    line-height: 100px;
+
+}
+.header-logo img{
+ display: inline-block;
+  height: 95px;
+  width: 100px;
+  
+}
+/* .header-logo .logo img{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+} */
+.header-txt {
+    font-size: 0.6rem;
+    color: #999;
+    display: inline-block;
+    padding-left: 0.3rem;
+}
+
+.memu-div .ant-menu {
+    background-color: #950000;
+    line-height: 100px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* 会覆盖原来样式     */
+/* .memu-div1{
+    display: flex;
+    justify-content: flex-end;
+   
+} */
+.memu-div1 .ant-menu {
+    /* background-color: #DC5252; */
+
+
+}
+
+.ant-col-xs-20 {
+    height: 100px;
+}
+
+.ant-col-xs-20 .ant-btn {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 50px;
+  
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #950000 !important;
+}
+
+.ant-drawer-content .ant-menu {
+    background-color: #950000 !important;
+    opacity: 0.8;
+    /*0~1的数字*/
+}
+
+.memu-div1 .ant-btn {
+  
+}
+
+@media screen and (min-width:800px){
+    .ant-menu-item-selected,
+    .ant-menu-item-active {
+        color: #FFFF00 !important;
+        border-bottom: 4px solid #FFFF00 !important;
+    }
+}
+
+
+.memu-div .ant-menu-item {
+    background-color: #950000;
+
+    font-size: 0.26rem !important;
+    color: #fff;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+
+}
+.ant-btn{
+    background-color: rgb(241, 80, 80);
+    border-color: rgb(236, 75, 75);
+}
+.ant-btn .anticon{
+    font-size: 30px;
+}
+
+
+
+/* #certify {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto
+}
+
+#certify .swiper-container {
+    padding-bottom: 60px
+} */
+
+.swiper-container .swiper-slide {
+    width: 520px;
+    height: 408px;
+    background: #fff;
+    box-shadow: 0 8px 30px #ddd
+}
+
+/* .swiper-container .swiper-slide img {
+    display: block
+}
+
+#certify .swiper-slide p {
+    line-height: 98px;
+    padding-top: 0;
+    text-align: center;
+    color: #636363;
+    font-size: 1.1em;
+    margin: 0
+}
+
+#certify .swiper-pagination {
+    width: 100%;
+    bottom: 20px
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+    border: 3px solid #fff;
+    background-color: #d5d5d5;
+    width: 10px;
+    height: 10px;
+    opacity: 1
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+    border: 3px solid #00aadc;
+    background-color: #fff
+}
+
+#certify .swiper-button-prev {
+    left: -30px;
+    width: 45px;
+    height: 45px;
+    background: url(../images/wm_button_icon.png) no-repeat;
+    background-position: 0 0;
+    background-size: 100%
+}
+
+#certify .swiper-button-prev:hover {
+    background-position: 0 -46px;
+    background-size: 100%
+}
+
+#certify .swiper-button-next {
+    right: -30px;
+    width: 45px;
+    height: 45px;
+    background: url(../images/wm_button_icon.png) no-repeat;
+    background-position: 0 -93px;
+    background-size: 100%
+}
+
+#certify .swiper-button-next:hover {
+    background-position: 0 -139px;
+    background-size: 100%
+} */

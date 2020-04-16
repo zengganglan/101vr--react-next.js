@@ -1,0 +1,26 @@
+#container {
+  margin-top: 50px;
+  height: 600px;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.aboutus {
+  text-align: center;
+}
+.aboutus img {
+  width: 100%;
+  display: block;
+}
+.adress {
+  margin-left: 1rem;
+}
+.adress h2,
+.adress h4 {
+  font-weight: 800;
+}
+@media screen and (min-width: '768px') {
+  .adress {
+    margin-left: 4rem !important;
+  }
+}

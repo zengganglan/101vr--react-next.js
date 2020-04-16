@@ -1,0 +1,105 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  /* height: 5rem; */
+  /* line-height:5rem; */
+  background: #fff;
+  overflow: hidden;
+}
+.ant-carousel .slick-slide h3 img {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.video .title {
+  text-align: center;
+}
+.video .body {
+  text-align: center;
+}
+.video .body iframe {
+  margin-top: 20px;
+  height: 8rem;
+  width: 12rem;
+}
+.product {
+  position: relative;
+  padding: 0.5rem;
+}
+.product:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+.product:nth-child(odd) .pro_name {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 80%;
+}
+.product:nth-child(odd) .pro_name img {
+  width: 85%;
+  height: 100%;
+}
+.product:nth-child(odd) .swiper-container {
+  width: 60%;
+  margin-left: 40%;
+}
+.product:nth-child(odd) .swiper-container .swiper-wrapper .swiper-slide {
+  background-color: transparent;
+}
+.product:nth-child(odd) .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.product:nth-child(even) {
+  background-color: #950000;
+}
+.product:nth-child(even) .pro_name {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 30%;
+  height: 80%;
+}
+.product:nth-child(even) .pro_name img {
+  width: 85%;
+  height: 100%;
+}
+.product:nth-child(even) .swiper-container {
+  width: 60%;
+  margin-right: 40%;
+}
+.product:nth-child(even) .swiper-container .swiper-wrapper .swiper-slide {
+  background-color: transparent;
+}
+.product:nth-child(even) .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+.cases {
+  margin-bottom: 40px;
+}
+.cases .top {
+  width: 80%;
+  margin: 0 auto;
+}
+.cases .top img {
+  width: 100%;
+}
+.cases .right {
+  background-color: #F5F5F5;
+}
+.cases .right .ant-col-xs-20 {
+  height: 100% !important;
+}
+.cases .right img {
+  width: 100%;
+  display: block;
+}
+.cases .right .right5 {
+  cursor: pointer;
+}
+.ant-layout {
+  background-color: #fff;
+}

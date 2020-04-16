@@ -1,0 +1,40 @@
+li{
+
+    list-style: none;
+    padding: 5px;
+}
+i{
+    font-style: normal;
+}
+.foot{
+    background-color: #F3F3F3;
+    color: #9A9A9A;
+   
+    
+}
+.foot-top{
+   font-size: 14px;
+  
+}
+.title a{
+    font-size: 14px;
+    font-weight: 400;
+    color:rgb(12, 12, 12);
+    font-weight: 800;
+
+    
+}
+
+
+.foot-bottom{
+    text-align: center;
+    height: 120px;
+    padding-top: 20px;
+    /* height: 100px;
+    line-height: 100px; */
+    font-size: 16px;
+}
+.foot{
+    padding: 0 10px;
+
+}
