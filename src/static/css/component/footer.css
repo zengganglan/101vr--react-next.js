@@ -8,18 +8,22 @@ i{
 }
 .foot{
     background-color: #F3F3F3;
-    color: #9A9A9A;
+    color: #888888;
+    font-weight: 600;
    
     
 }
 .foot-top{
    font-size: 14px;
+   padding-top: 50px;
+   border-bottom:1px solid #CCCCCC;
+   line-height: 30px;
   
 }
 .title a{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    color:rgb(12, 12, 12);
+    color:#666666;
     font-weight: 800;
 
     
@@ -32,7 +36,7 @@ i{
     padding-top: 20px;
     /* height: 100px;
     line-height: 100px; */
-    font-size: 16px;
+    font-size: 14px;
 }
 .foot{
     padding: 0 10px;

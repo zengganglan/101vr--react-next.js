@@ -6,8 +6,12 @@ import Cases from './case'
 import Successcase from './successcase'
 import Aboutus from './aboutus'
 function Main(){
+    // const isProd = process.env.REACT_APP_ENV === 'production';
+    // basename={isProd ? '/vrproduct' : '/'}
+      // "homepage": "vrproduct",
+
     return(
-        <Router>
+        <Router basename='/vrproduct'>
             <Route path='/' exact component={Index}></Route>
             <Route path='/Products' exact component={Products}></Route>
             <Route path='/cases' exact component={Cases}></Route>

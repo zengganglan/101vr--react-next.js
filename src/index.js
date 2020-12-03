@@ -6,6 +6,7 @@ import Main from './Pages/Main'
 import  './rem.js'
 
 import './static/css/public.css'
+import { hasPrefixSuffix } from 'antd/lib/input/ClearableLabeledInput';
 
 // import './index.css'
 ReactDom.render(<Main />,document.getElementById('root'))
@@ -14,3 +15,4 @@ ReactDom.render(<Main />,document.getElementById('root'))
 // // unregister() to register() below. Note this comes with some pitfalls.
 // // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
+

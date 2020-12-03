@@ -8,19 +8,111 @@
 .aboutus {
   text-align: center;
 }
-.aboutus img {
+.aboutus .banner img {
   width: 100%;
   display: block;
 }
-.adress {
-  margin-left: 1rem;
+.aboutus .jieshao {
+  height: 600px;
+  margin-top: 90px;
+  margin-bottom: 300px;
+  background-color: #EEEEEE;
 }
-.adress h2,
-.adress h4 {
+.aboutus .jieshao .a1 {
+  position: relative;
+  width: 75%;
+  top: 20%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #666666;
+}
+.aboutus .jieshao .a1 img {
+  width: 100%;
+  height: 622px;
+}
+.aboutus .jieshao .a1 .a2 {
+  display: inline-block;
+  position: absolute;
+  margin-top: 100px;
+  width: 50%;
+  left: 46%;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.aboutus .jieshao .a1 .a2 h2 {
   font-weight: 800;
+  line-height: 20px;
 }
-@media screen and (min-width: '768px') {
-  .adress {
-    margin-left: 4rem !important;
+.aboutus .jieshao .a1 .a2 p {
+  color: #CDCBCD;
+  font-size: 20px;
+}
+.aboutus .title1 {
+  margin: 0 3rem;
+}
+.aboutus .title1 .lists {
+  margin-top: 20px;
+}
+.aboutus .title1 .lists p {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+.aboutus .title1 .lists img {
+  width: 100%;
+}
+.adress .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.adress .title h2 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+.adress .ditu {
+  margin: 0 3rem;
+  display: flex;
+  justify-content: center;
+}
+.adress .ditu .left {
+  width: 45%;
+  text-align: left;
+  line-height: 35px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.adress .ditu .left h4 {
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 60px;
+}
+@media screen and (max-width: 1200px) {
+  .a2 {
+    line-height: 20px !important;
+  }
+  .ditu {
+    margin: 0 0.5rem !important;
+    display: flex;
+    justify-content: center;
+  }
+  .title1 {
+    margin: 0 0.5rem !important;
+  }
+  .title1 img {
+    width: 100% !important;
+  }
+  .title1 .lists {
+    margin-top: 20px;
+  }
+  .title1 .lists img {
+    width: 100%;
+  }
+  .title1 .lists p {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 20px;
   }
 }

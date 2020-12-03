@@ -1,26 +1,154 @@
-#container{
-    margin-top: 50px;
-    height: 600px;
-    width: 65%;
-    margin: 0 auto;
-    margin-bottom: 100px;
+#container {
+  margin-top: 50px;
+  height: 600px;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 100px;
 }
+
 .aboutus {
-    text-align: center;
-    img{
+  text-align: center;
+
+  .banner {
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .jieshao {
+    height: 600px;
+    margin-top: 90px;
+    margin-bottom: 300px;
+    background-color: #EEEEEE;
+
+    .a1 {
+      position: relative;
+      width: 75%;
+      top: 20%;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      color: #666666;
+
+      img {
         width: 100%;
-        display: block;
+        height: 622px;
+
+      }
+
+      .a2 {
+        display: inline-block;
+        position: absolute;
+        margin-top: 100px;
+        width: 50%;
+        left: 46%;
+        text-align: left;
+        line-height: 40px;
+        letter-spacing: 2px;
+        font-weight: 600;
+
+        h2 {
+          font-weight: 800;
+          line-height: 20px;
+        }
+
+        p {
+          color: #CDCBCD;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .title1{
+      margin: 0 3rem;
+      .lists{
+         margin-top: 20px;
+         p{
+             font-size: 25px;
+             font-weight: 800;
+             margin-top: 20px;
+             
+         }
+         img{
+           width: 100%;
+         }
+      }
+  }
+
+}
+
+.adress {
+    .title{
+        text-align: center;
+        margin-bottom: 50px;
+        h2{
+            font-size: 30px;
+            font-weight: 800;
+            margin-top: 50px;
+        }
+    }
+    .ditu{
+        margin: 0 3rem;
+        display: flex;
+        justify-content: center;
+
+        .left{
+            width: 45%;
+            text-align: left;
+            line-height: 35px;
+            padding: 0 20px;
+            font-size: 20px;
+            h4{
+                font-weight: 800;
+                font-size: 25px;
+                margin-top: 60px;
+            }
+
+        }
+        #container{
+
+        }
+    }
+//   margin-left: 1rem;
+
+//   h2,
+//   h4 {
+//     font-weight: 800;
+//   }
+}
+
+@media screen and(max-width:1200px) {
+  .adress {
+    // margin-left: 4rem !important;
+
+  }
+  .a2 {
+    line-height: 20px !important;
+    
+  }
+  .ditu{
+    margin: 0 0.5rem !important;
+    display: flex;
+    justify-content: center;
+
+  }
+  .title1{
+    margin: 0 0.5rem !important;
+    img{
+      width: 100% !important;
+    }
+    .lists{
+       margin-top: 20px;
+       img{
+         width: 100%;
+       }
+       p{
+           font-size: 25px;
+           font-weight: 800;
+           margin-top: 20px;
+           
+       }
+      
     }
 }
-.adress{
-    margin-left: 1rem;
-    h2,h4{
-        font-weight: 800;
-    }
-}
-@media screen and(min-width:'768px'){
-    .adress{
-        margin-left: 4rem !important;
-        
-    }
 }

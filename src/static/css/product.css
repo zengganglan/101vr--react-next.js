@@ -1,3 +1,19 @@
+@media screen and (max-width: 800px) {
+  .navs .nav {
+    position: fixed !important;
+    z-index: 1000;
+    width: 240px !important;
+    opacity: 0.75;
+    left: 0rem !important;
+  }
+  .products img {
+    width: 100%;
+  }
+  .products p {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
 .ant-tabs-nav {
   margin: 0 auto !important;
 }
@@ -20,7 +36,10 @@
 }
 .navs .nav {
   z-index: 1000;
-  width: 150px !important;
+  width: 240px !important;
+  opacity: 0.75;
+  top: 10px;
+  left: -2rem;
 }
 .navs .nav .ant-collapse-item {
   width: 250px !important;
@@ -29,14 +48,73 @@
 .navs .nav .ant-collapse-content {
   border: none;
 }
+.ant-anchor-link-title {
+  color: #989898 !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.ant-anchor-link-active > .ant-anchor-link-title {
+  color: #CA0000 !important;
+}
+.titles {
+  height: 50px;
+  border-radius: 7px;
+  border-bottom: 3px solid #F3F3F3;
+  line-height: 50px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.titles .a1 {
+  margin: 0 15px;
+}
+.titles .a2 {
+  margin-left: 30px;
+}
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: #CA0000 !important;
+  font-weight: 800 !important;
+}
+.ant-tabs-nav-container {
+  font-size: 25px !important;
+  font-weight: 800;
+}
+.ant-tabs-ink-bar {
+  background-color: #CA0000 !important;
+  position: relative;
+}
+.ant-tabs-ink-bar::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #CA0000 transparent !important;
+  position: absolute;
+  top: -15px;
+  left: 45%;
+}
+.top1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.top1 h2 {
+  font-weight: 800;
+  margin-top: 20px;
+}
+.top1 p {
+  color: '#7C7C7C';
+}
+.top1 img {
+  width: 100%;
+}
 .products {
   height: 100% !important;
 }
-.products .top {
-  text-align: center;
-}
-.products .top img {
-  width: 100%;
+.products .all-pro h3,
+.products .all-pro h2 {
+  font-weight: 800;
+  margin-top: 50px;
 }
 .yj {
   margin: 0 auto;

@@ -1,7 +1,65 @@
 .seccesscase {
   text-align: center;
 }
-.seccesscase img {
+.seccesscase .banner img {
   display: block;
   width: 100%;
+}
+.seccesscase .container {
+  padding: 0 2.5rem;
+  padding-top: 100px;
+}
+.seccesscase .container .right1 {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  margin: 10px;
+}
+.seccesscase .container .right1 img {
+  width: 100%;
+}
+.seccesscase .container .right1 .title {
+  padding: 0 20px;
+  text-align: left;
+  position: absolute;
+  bottom: 40px;
+  height: 50px;
+  line-height: 16px;
+}
+.seccesscase .container .right1 .title h2 {
+  font-weight: 800;
+}
+.seccesscase .container .hezuo {
+  margin: 70px 0;
+}
+.seccesscase .container .hezuo img {
+  width: 100%;
+}
+.seccesscase .container .hezuo .title1 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 0.6rem !important;
+  }
+  .container .right1 {
+    position: relative !important;
+  }
+  .container .right1 img {
+    width: 100%;
+    height: 350px;
+  }
+  .container .right1 .title {
+    padding: 0 20px;
+    text-align: left;
+    position: absolute;
+    height: 63px;
+    line-height: 15px;
+  }
+  .container .right1 .title h2 {
+    font-size: 14px !important;
+  }
+  .container .right1 .title p {
+    font-size: 12px !important;
+  }
 }

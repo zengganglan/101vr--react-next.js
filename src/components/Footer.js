@@ -35,16 +35,17 @@ const Footer = (props) => {
                             <Col xs={12} sm={12} md={12} lg={6} xl={6}>
                                 <ul>
                                     <li className='title' ><Link to='/Products'>软件产品</Link></li>
-                                    <li >新时代系列</li>
-                                    <li >70周年系列</li>
-                                    <li >党史系列</li>
-                                    <li >特色主题</li>
+                                    <li >新时代思想</li>
+                                    <li >新中国史</li>
+                                    <li >中国共产党党史</li>
+                                    <li >社会主义发展史(思政)</li>
+                                    <li >特色主题馆</li>
                                 </ul>
                             </Col>
                           
                             <Col xs={12} sm={12} md={12} lg={6} xl={6}>
                                 <ul>
-                                    <li className='title' ><Link to='/successcase'>推荐方案</Link></li>
+                                    <li className='title' ><Link to='/cases'>推荐方案</Link></li>
                                     <li>党建活动中心</li>
                                     <li>互动屏+一体机版本</li>
                                     <li>单互动版本</li>
@@ -60,10 +61,10 @@ const Footer = (props) => {
                                 </ul>
                             </Col>
                      
-                    <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-                        <ul >
+                    <Col xs={12} sm={12} md={12} lg={6} xl={6}  >
+                        <ul style={{borderLeft:'1px solid #CCCCCC',height:'80%'}}>
                             <li className='title'><Link to='/aboutus'>关于我们</Link></li>
-                            <li>联系电话：157958632561，02544885693</li>
+                            <li>联系电话：025-52212101, 18761145592</li>
                             <li>公司地址：江苏省南京市栖霞区紫东路2号腾讯众创空间B6栋B座2楼</li>
                         </ul>
                     </Col>

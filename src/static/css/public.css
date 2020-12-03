@@ -1,4 +1,8 @@
 body{
-    font-size:16px 
+    font-family: 'SimSun';
+    font-size:16px,
+    
+    
 }
+
 /* //这里是给未设置字体的标签设置的保留字体大小  */

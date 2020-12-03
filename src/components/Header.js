@@ -23,7 +23,7 @@ function Header(props) {
             props.history.push('/cases')
         } else if (e.key == '/successcase') {
             props.history.push('/successcase')
-        } else {
+        } else  if (e.key == '/aboutus'){
             props.history.push('/aboutus')
         }
     }
@@ -32,13 +32,13 @@ function Header(props) {
     }
     return <div className='header'>
         <Row type='flex' justify="space-around" align='middle'>
-            <Col className="header-logo" span={1} xs={4} sm={4} md={4} lg={4} xl={4}> 
-            <span className='logo'>       <img src={require("../static/picture/nav/logo.png")} alt="" /> 
+            <Col className="header-logo" span={1} xs={19} sm={19} md={19} lg={4} xl={4}> 
+            <span className='logo'>       <img src={require("../static/picture/首页切图/logo.png")} alt="" /> 
  </span>
                     
 
             </Col>
-            <Col className="memu-div" xs={0} sm={0} md={0} lg={20} xl={20} >
+            <Col className="memu-div" xs={0} sm={0} md={0} lg={15} xl={15} >
 
                 <Menu mode="horizontal" onClick={handleClickArticle}  defaultSelectedKeys={['/']} selectedKeys={[props.history.location.pathname]}>
                     {/* <Menu.Item key="home">
@@ -60,11 +60,14 @@ function Header(props) {
                 </Menu.Item>
                     <Menu.Item key="/aboutus">
                         关于我们
+                        
                 </Menu.Item>
+              
                 </Menu>
             </Col>
+            <Col className="memu-phone" xs={0} sm={0} md={0} lg={4} xl={4}>  咨询热线：025-5221-2101</Col>
           
-            <Col className="memu-div1" xs={20} sm={20} md={20} lg={0} xl={0} >
+            <Col className="memu-div1" xs={5} sm={5} md={5} lg={0} xl={0} >
             <Button type="primary" onClick={toggleCollapsed} style={{ marginBottom: 16 }}>
           <Icon type={collapsed ? 'menu-unfold' : 'menu-fold'} />
         </Button>

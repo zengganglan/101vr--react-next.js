@@ -1,6 +1,8 @@
 .header {
-    height: 105px;
-    background-color: #950000;
+    height: 88px;
+    background-color: #fff;
+    padding: 0 2rem;
+    margin-bottom: 10px;
     /* background-color: #fff;
 
     padding: .4rem;
@@ -8,32 +10,38 @@
     height: 2.8rem;
     border-bottom:1px solid #ccc; */
 }
+.ant-menu-horizontal{
+ border: none;
+}
+
 @media screen and (max-width: 800px)  {
    .header{
    height: 60px !important;
+   padding: 0 2px !important;
+
    }
    .memu-div .ant-menu {
     line-height: 60px !important;
   
 }
-.ant-col-xs-20 {
+.header .ant-col-xs-5 {
     height: 60px !important;
 }
-.ant-col-xs-20 .ant-btn {
+.ant-col-xs-5 .ant-btn {
     float: right;
-    margin-top: 4px !important;
-    margin-right: 20px;
+    margin-top: 5px !important;
+    margin-right: 10px;
     height: 50px;
 }
 .header-logo {
     line-height: 50px !important;
     height: 50px !important;
-    width: 60px !important;
+    width: 100px !important;
 }
 .header-logo img{
     display: inline-block;
      height: 50px !important;
-     width: 50px !important;
+     width: 150px !important;
      
    }
    .ant-menu-item-selected,
@@ -45,13 +53,13 @@
 .header-logo {
     color: #1e90ff;
     text-align: center;
-    line-height: 100px;
+    /* line-height: 88px; */
 
 }
 .header-logo img{
  display: inline-block;
-  height: 95px;
-  width: 100px;
+  height: 62px;
+  width: 221px;
   
 }
 /* .header-logo .logo img{
@@ -67,8 +75,8 @@
 }
 
 .memu-div .ant-menu {
-    background-color: #950000;
-    line-height: 100px;
+    background-color: #fff;
+    line-height: 84px;
     display: flex;
     justify-content: space-around;
 
@@ -99,11 +107,11 @@
 }
 
 .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
-    background-color: #950000 !important;
+    /* background-color: #950000 !important; */
 }
 
 .ant-drawer-content .ant-menu {
-    background-color: #950000 !important;
+    background-color: #fff !important;
     opacity: 0.8;
     /*0~1的数字*/
 }
@@ -115,17 +123,25 @@
 @media screen and (min-width:800px){
     .ant-menu-item-selected,
     .ant-menu-item-active {
-        color: #FFFF00 !important;
-        border-bottom: 4px solid #FFFF00 !important;
+        color: #CA0000 !important;
+        border-bottom: 4px solid #CA0000 !important;
     }
 }
+.memu-phone{
+    color: #CA0000 !important;
+    font-size: 0.2rem !important;
+    font-weight: 800;
 
+
+
+}
 
 .memu-div .ant-menu-item {
-    background-color: #950000;
+    background-color: #fff;
 
-    font-size: 0.26rem !important;
-    color: #fff;
+    font-size: 0.22rem !important;
+    color: #333333;
+    font-weight: 800;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
 
